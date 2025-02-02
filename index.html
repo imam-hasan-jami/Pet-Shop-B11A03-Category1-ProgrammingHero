@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/064982cd6e.js" crossorigin="anonymous"></script>
+
+    <!-- Font-Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-sora {
+            font-family: 'Sora', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Nav-bar -->
+        <nav class="bg-[#FFF9F4] border-[0.5px] border-[#111111] lg:border-none">
+            <div class="navbar max-w-[358px] lg:max-w-[1320px] mx-auto pt-3 pb-[10px] lg:py-[26px]">
+                <div class="navbar-start">
+                    <!-- Logo svg -->
+                    <svg width="47.848099" height="48.000000" viewBox="0 0 47.8481 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs>
+                            <clipPath id="clip1_4">
+                                <rect id="pawprint 1" rx="0.000000" width="46.848099" height="47.000000"
+                                    transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0" />
+                            </clipPath>
+                        </defs>
+                        <rect id="pawprint 1" rx="0.000000" width="46.848099" height="47.000000"
+                            transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0" />
+                        <g clip-path="url(#clip1_4)">
+                            <path id="Vector"
+                                d="M31.99 25.43C29.84 22.06 26.17 20.05 22.18 20.05C18.19 20.05 14.53 22.06 12.37 25.43L7.19 33.55C6.32 34.9 5.93 36.46 6.04 38.05C6.15 39.65 6.75 41.14 7.79 42.35C8.82 43.57 10.2 44.4 11.75 44.76C13.31 45.11 14.9 44.96 16.36 44.32L16.46 44.27C20.14 42.69 24.34 42.7 28 44.32C28.95 44.74 29.95 44.95 30.96 44.95C31.51 44.95 32.06 44.88 32.61 44.76C34.17 44.4 35.54 43.57 36.58 42.35C37.61 41.14 38.22 39.65 38.33 38.05C38.44 36.46 38.04 34.9 37.18 33.55L31.99 25.43Z"
+                                fill="#FFDC26" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M8.58 25.42C10.13 24.83 11.3 23.58 11.88 21.91C12.44 20.32 12.4 18.52 11.76 16.86C11.11 15.19 9.95 13.82 8.47 13.02C6.92 12.17 5.22 12.04 3.68 12.63C0.58 13.83 -0.85 17.67 0.51 21.2C1.59 24.01 4.1 25.78 6.65 25.78C7.3 25.78 7.95 25.67 8.58 25.42Z"
+                                fill="#FFDC26" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M18.65 19.06C22.52 19.06 25.68 15.46 25.68 11.03C25.68 6.6 22.52 3 18.65 3C14.77 3 11.62 6.6 11.62 11.03C11.62 15.46 14.77 19.06 18.65 19.06Z"
+                                fill="#FFDC26" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M30.79 21.04L30.79 21.04C31.38 21.23 31.99 21.33 32.6 21.33C35.42 21.33 38.18 19.27 39.23 16.09C39.83 14.27 39.79 12.34 39.12 10.66C38.41 8.9 37.09 7.63 35.42 7.07C33.74 6.51 31.93 6.74 30.31 7.72C28.76 8.66 27.58 10.18 26.98 12.01C25.7 15.86 27.41 19.91 30.79 21.04Z"
+                                fill="#FFDC26" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M45.59 20.1L45.59 20.1C42.91 18.12 38.92 18.98 36.68 22.01C34.44 25.05 34.79 29.13 37.46 31.12C38.43 31.84 39.58 32.19 40.76 32.19C42.81 32.19 44.94 31.14 46.37 29.2C48.61 26.17 48.26 22.08 45.59 20.1Z"
+                                fill="#FFDC26" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </g>
+                    </svg>
+                    <h3 class="font-sora text-[26px] ml-[10px] hidden lg:block">Browse<span
+                            class="text-[#FFDC26]">4</span>Pets</h3>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-sora text-[20px]">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-3 hidden lg:flex">
+                    <!-- Bell icon svg -->
+                    <svg width="21.752197" height="24.002750" viewBox="0 0 21.7522 24.0028" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="Vector"
+                            d="M21.56 13.65L19.66 6.82C19.11 4.82 17.9 3.06 16.23 1.82C14.55 0.59 12.52 -0.06 10.44 0C8.36 0.05 6.36 0.8 4.76 2.12C3.15 3.44 2.04 5.26 1.59 7.29L0.11 13.91C-0.05 14.64 -0.04 15.4 0.13 16.13C0.29 16.86 0.63 17.54 1.09 18.12C1.56 18.71 2.16 19.18 2.83 19.5C3.51 19.82 4.25 19.99 5 19.99L6.11 19.99C6.34 21.12 6.95 22.14 7.84 22.87C8.74 23.6 9.86 24 11.01 24C12.16 24 13.28 23.6 14.17 22.87C15.07 22.14 15.68 21.12 15.91 19.99L16.75 19.99C17.52 19.99 18.28 19.81 18.97 19.47C19.66 19.13 20.26 18.63 20.73 18.02C21.19 17.41 21.51 16.69 21.66 15.93C21.8 15.18 21.77 14.4 21.56 13.65ZM11.01 21.99C10.39 21.99 9.79 21.8 9.28 21.44C8.78 21.08 8.4 20.58 8.19 19.99L13.83 19.99C13.62 20.58 13.24 21.08 12.73 21.44C12.23 21.8 11.63 21.99 11.01 21.99ZM19.14 16.81C18.86 17.18 18.5 17.48 18.08 17.68C17.67 17.89 17.21 17.99 16.75 17.99L5 17.99C4.55 17.99 4.1 17.89 3.7 17.7C3.29 17.5 2.94 17.22 2.66 16.87C2.37 16.52 2.18 16.11 2.07 15.67C1.97 15.24 1.97 14.78 2.07 14.34L3.54 7.73C3.89 6.13 4.77 4.7 6.03 3.66C7.29 2.63 8.86 2.04 10.49 2C12.12 1.95 13.72 2.46 15.04 3.43C16.35 4.4 17.3 5.78 17.74 7.35L19.64 14.19C19.76 14.64 19.78 15.1 19.7 15.56C19.61 16.01 19.42 16.44 19.14 16.81Z"
+                            fill="#111111" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                    <!-- Search icon svg -->
+                    <svg width="24.019653" height="24.019722" viewBox="0 0 24.0197 24.0197" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="Vector"
+                            d="M23.73 22.32L17.77 16.35C19.39 14.36 20.19 11.82 20 9.26C19.81 6.7 18.64 4.31 16.73 2.58C14.83 0.86 12.33 -0.07 9.76 0C7.19 0.06 4.75 1.11 2.93 2.93C1.11 4.75 0.06 7.19 0 9.76C-0.07 12.33 0.86 14.83 2.58 16.73C4.31 18.64 6.7 19.81 9.26 20C11.82 20.19 14.36 19.39 16.35 17.77L22.32 23.73C22.51 23.92 22.76 24.02 23.02 24.01C23.29 24.01 23.54 23.91 23.72 23.72C23.91 23.54 24.01 23.29 24.01 23.02C24.02 22.76 23.92 22.51 23.73 22.32ZM10.03 18.03C8.44 18.03 6.9 17.56 5.58 16.68C4.27 15.8 3.24 14.55 2.64 13.09C2.03 11.63 1.87 10.02 2.18 8.47C2.49 6.91 3.25 5.49 4.37 4.37C5.49 3.25 6.91 2.49 8.47 2.18C10.02 1.87 11.63 2.03 13.09 2.64C14.55 3.24 15.8 4.27 16.68 5.58C17.56 6.9 18.03 8.44 18.03 10.03C18.02 12.15 17.18 14.18 15.68 15.68C14.18 17.18 12.15 18.02 10.03 18.03Z"
+                            fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                    <button
+                        class="bg-transparent border border-[#FFDC26] rounded-lg py-[10px] px-[30px] font-sora text-[20px]">Login</button>
+                    <button class="bg-[#FFDC26] rounded-lg py-[10px] px-[30px] font-sora text-[20px]">Register</button>
+                </div>
+                <!-- Menu icon will be shown for Mobile devices -->
+                <div class="navbar-end lg:hidden">
+                    <!-- Menu icon svg -->
+                    <svg width="22.500000" height="15.000000" viewBox="0 0 22.5 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="Vector (Stroke)"
+                            d="M0 0.93C0 0.41 0.41 0 0.93 0L21.56 0C22.08 0 22.5 0.41 22.5 0.93C22.5 1.45 22.08 1.87 21.56 1.87L0.93 1.87C0.41 1.87 0 1.45 0 0.93ZM0 7.5C0 6.98 0.41 6.56 0.93 6.56L21.56 6.56C22.08 6.56 22.5 6.98 22.5 7.5C22.5 8.01 22.08 8.43 21.56 8.43L0.93 8.43C0.41 8.43 0 8.01 0 7.5ZM0 14.06C0 13.54 0.41 13.12 0.93 13.12L21.56 13.12C22.08 13.12 22.5 13.54 22.5 14.06C22.5 14.58 22.08 15 21.56 15L0.93 15C0.41 15 0 14.58 0 14.06Z"
+                            fill="#111111" fill-opacity="1.000000" fill-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+
+</html>
