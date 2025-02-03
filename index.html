@@ -32,6 +32,14 @@
         .font-adlam {
             font-family: "ADLaM Display", serif;
         }
+
+        .bg-custom-gradient1 {
+            background: linear-gradient(134.71deg, rgb(248, 204, 251) 1.286%, rgb(172, 210, 253) 100%);
+        }
+
+        .bg-custom-gradient2 {
+            background: linear-gradient(134.71deg, rgb(255, 249, 244) 1.511%, rgb(249, 223, 138) 100%);
+        }
     </style>
 </head>
 
@@ -1445,6 +1453,50 @@
                                     <p class="font-sora text-[10px] lg:text-base mt-1 lg:mt-2">$39.99</p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Everyday low price -->
+        <section>
+            <div class="max-w-[358px] lg:max-w-[1320px] mx-auto mb-14 lg:mb-36">
+                <h3 class="font-adlam text-2xl mb-8 lg:text-4xl lg:mt-[140px] lg:mb-[48px]">Everyday low Price</h3>
+
+                <!-- Card container -->
+                <div class="grid grid-cols-1 gap-7 lg:grid-cols-5 lg:gap-6">
+                    <!-- card1 big card-->
+                    <div class="relative lg:h-[480px] bg-custom-gradient1 rounded-xl lg:col-span-3 hidden lg:flex">
+                        <div class="lg:mt-[137px] lg:ml-[88px]">
+                            <h6 class="font-sora lg:text-[20px] lg:mb-3">Under Price</h6>
+                            <h3 class="font-adlam lg:text-[32px] lg:mb-2">Pet Grooming Mitt</h3>
+                            <h4 class="font-adlam text-white lg:text-2xl lg:mb-4">(Easy Hair Removal)</h4>
+                            <h2 class="font-adlam lg:text-[56px] ">$7.99</h2>
+                        </div>
+                        <div class="absolute lg:ml-[400px] lg:mt-5">
+                            <img src="./assets/cute-dog-mid.png" alt="">
+                        </div>
+                    </div>
+                    <!-- card1 for mobile devices -->
+                    <div
+                        class="relative h-[335px] bg-custom-gradient1 rounded-xl lg:col-span-2 lg:hidden">
+                        <div class="mt-[38px] ml-[35px]">
+                            <h3 class="font-adlam text-[23px]">Pet Grooming Mitt</h3>
+                            <h2 class="font-adlam text-white text-[39px]">$7.99</h2>
+                        </div>
+                        <div class="absolute inset-0 flex justify-end items-end">
+                            <img class="w-[214px] h-[268]" src="./assets/cute-dog-mid.png" alt="">
+                        </div>
+                    </div>
+                    <!-- card2 -->
+                    <div class="relative h-[335px] lg:h-[480px] bg-custom-gradient2 rounded-xl lg:col-span-2 lg:flex">
+                        <div class="mt-[38px] ml-[35px] lg:mt-[55px] lg:ml-[50px]">
+                            <h3 class="font-adlam text-[23px] lg:text-[32px]">T-Shirt for Dogs</h3>
+                            <h2 class="font-adlam text-[#FFDC26] text-[39px] lg:text-[56px]">$7.99</h2>
+                        </div>
+                        <div class="absolute inset-0 flex justify-end items-end">
+                            <img class="w-[218px] h-[274px] lg:w-[312px] lg:h-[392px]" src="./assets/cute-pet-mid.png" alt="">
                         </div>
                     </div>
                 </div>
