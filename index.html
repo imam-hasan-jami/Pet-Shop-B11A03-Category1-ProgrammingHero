@@ -40,6 +40,35 @@
         .bg-custom-gradient2 {
             background: linear-gradient(134.71deg, rgb(255, 249, 244) 1.511%, rgb(249, 223, 138) 100%);
         }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 150%
+            }
+        }
+
+        @keyframes blink {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: black
+            }
+        }
+
+        .animate-typing {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(40, end) infinite,
+                blink .75s step-end infinite;
+        }
     </style>
 </head>
 
@@ -137,8 +166,11 @@
         <!-- Hero-section -->
         <section class="max-w-[358px] lg:max-w-[1320px] mx-auto mt-8 lg:mt-[76px]">
             <div class="relative">
-                <h2 class="font-adlam text-3xl leading-[40px] lg:text-[56px] lg:leading-[75px]">Pamper Your Pet, <br>
-                    Because They Deserve <br> the Best.
+                <h2 class="font-adlam text-3xl leading-[40px] lg:text-[56px] lg:leading-[75px] inline-block">
+                    <span class="animate-typing block">
+                        Pamper Your Pet, <br>
+                        Because They Deserve <br> the Best.
+                    </span>
                 </h2>
                 <p class="font-sora text-base lg:text-[20px] lg:leading-[36px] mb-3 mt-3 lg:mb-5 lg:mt-3">Discover a
                     world of treats,
@@ -1504,15 +1536,18 @@
         </section>
     </main>
     <footer class="bg-[#FFDC2680]">
-        <div class="max-w-[358px] lg:max-w-[1320px] mx-auto grid lg:grid-cols-3 lg:gap-40 pt-[366px] pb-[56px] lg:pb-[140px]">
+        <div
+            class="max-w-[358px] lg:max-w-[1320px] mx-auto grid lg:grid-cols-3 lg:gap-40 pt-[366px] pb-[56px] lg:pb-[140px]">
             <!-- brand -->
             <div>
                 <!-- logo and name -->
                 <div class="flex gap-2 lg:gap-3 items-center">
                     <img class="w-[35] h-[35px] lg:w-[47px] lg:h-[48px]" src="./assets/logo-footer.png" alt="">
-                    <h3 class="font-sora text-[20px] lg:text-[26px]">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
+                    <h3 class="font-sora text-[20px] lg:text-[26px]">Browse<span class="text-[#FFDC26]">4</span>Pets
+                    </h3>
                 </div>
-                <p class="font-sora lg:text-[20px] mt-5 lg:mt-6">Discover a world of treats, toys, and essentials handpicked for
+                <p class="font-sora lg:text-[20px] mt-5 lg:mt-6">Discover a world of treats, toys, and essentials
+                    handpicked for
                     your furry friends</p>
             </div>
             <!-- links -->
